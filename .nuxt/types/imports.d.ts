@@ -402,8 +402,6 @@ declare global {
   const unref: typeof import('vue')['unref']
   const updateAppConfig: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/config')['updateAppConfig']
   const useAppConfig: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/config')['useAppConfig']
-  const useApplePwaIcon: typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useApplePwaIcon']
-  const useAppleSplashScreenPwaIcon: typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useAppleSplashScreenPwaIcon']
   const useAsyncData: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']
   const useAttrs: typeof import('vue')['useAttrs']
   const useBrowserLocale: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useBrowserLocale']
@@ -413,7 +411,6 @@ declare global {
   const useCssVars: typeof import('vue')['useCssVars']
   const useError: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/error')['useError']
   const useExampleStore: typeof import('../../stores/example')['useExampleStore']
-  const useFaviconPwaIcon: typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useFaviconPwaIcon']
   const useFetch: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/fetch')['useFetch']
   const useHead: typeof import('../../node_modules/.pnpm/@unhead+vue@1.11.18_vue@3.5.13_typescript@5.7.3_/node_modules/@unhead/vue')['useHead']
   const useHeadSafe: typeof import('../../node_modules/.pnpm/@unhead+vue@1.11.18_vue@3.5.13_typescript@5.7.3_/node_modules/@unhead/vue')['useHeadSafe']
@@ -427,11 +424,9 @@ declare global {
   const useLocaleHead: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useLocaleHead']
   const useLocalePath: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useLocalePath']
   const useLocaleRoute: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useLocaleRoute']
-  const useMaskablePwaIcon: typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useMaskablePwaIcon']
   const useModel: typeof import('vue')['useModel']
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']
   const useNuxtData: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']
-  const useNuxtDevTools: typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.7.0_rollup@2.79.2_vite@6.0.10_@types+node@22.10.7_jiti@2.4.2_sass@1.32.13_te_qo46njjjb7ug5fma55xvakh3dm/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
   const usePinia: typeof import('../../node_modules/.pnpm/@pinia+nuxt@0.9.0_magicast@0.3.5_pinia@2.3.1_typescript@5.7.3_vue@3.5.13_typescript@5.7.3___rollup@2.79.2/node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']
   const usePreviewMode: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']
   const useRequestEvent: typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']
@@ -481,7 +476,6 @@ declare global {
   const useSwitchLocalePath: typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useSwitchLocalePath']
   const useTemplateRef: typeof import('vue')['useTemplateRef']
   const useTransitionState: typeof import('vue')['useTransitionState']
-  const useTransparentPwaIcon: typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useTransparentPwaIcon']
   const useUserStore: typeof import('../../stores/user')['useUserStore']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
@@ -905,8 +899,6 @@ declare module 'vue' {
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly updateAppConfig: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/config')['updateAppConfig']>
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/config')['useAppConfig']>
-    readonly useApplePwaIcon: UnwrapRef<typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useApplePwaIcon']>
-    readonly useAppleSplashScreenPwaIcon: UnwrapRef<typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useAppleSplashScreenPwaIcon']>
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
     readonly useBrowserLocale: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useBrowserLocale']>
@@ -916,7 +908,6 @@ declare module 'vue' {
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/error')['useError']>
     readonly useExampleStore: UnwrapRef<typeof import('../../stores/example')['useExampleStore']>
-    readonly useFaviconPwaIcon: UnwrapRef<typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useFaviconPwaIcon']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/fetch')['useFetch']>
     readonly useHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.11.18_vue@3.5.13_typescript@5.7.3_/node_modules/@unhead/vue')['useHead']>
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/@unhead+vue@1.11.18_vue@3.5.13_typescript@5.7.3_/node_modules/@unhead/vue')['useHeadSafe']>
@@ -930,11 +921,9 @@ declare module 'vue' {
     readonly useLocaleHead: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useLocaleHead']>
     readonly useLocalePath: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useLocalePath']>
     readonly useLocaleRoute: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useLocaleRoute']>
-    readonly useMaskablePwaIcon: UnwrapRef<typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useMaskablePwaIcon']>
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
-    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+devtools@1.7.0_rollup@2.79.2_vite@6.0.10_@types+node@22.10.7_jiti@2.4.2_sass@1.32.13_te_qo46njjjb7ug5fma55xvakh3dm/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePinia: UnwrapRef<typeof import('../../node_modules/.pnpm/@pinia+nuxt@0.9.0_magicast@0.3.5_pinia@2.3.1_typescript@5.7.3_vue@3.5.13_typescript@5.7.3___rollup@2.79.2/node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.15.2_@parcel+watcher@2.5.0_@types+node@22.10.7_db0@0.2.1_eslint@9.18.0_jiti@2.4.2__ior_dslk2bryzpuqhdmz524kq45dim/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']>
@@ -984,7 +973,6 @@ declare module 'vue' {
     readonly useSwitchLocalePath: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxtjs+i18n@9.0.0-rc.2_@vue+compiler-dom@3.5.13_eslint@9.18.0_jiti@2.4.2__magicast@0.3.5_rol_z3yqv3emvle22s4qmzjlalrql4/node_modules/@nuxtjs/i18n/dist/runtime/composables/index')['useSwitchLocalePath']>
     readonly useTemplateRef: UnwrapRef<typeof import('vue')['useTemplateRef']>
     readonly useTransitionState: UnwrapRef<typeof import('vue')['useTransitionState']>
-    readonly useTransparentPwaIcon: UnwrapRef<typeof import('../../node_modules/.pnpm/@vite-pwa+nuxt@0.10.6_@vite-pwa+assets-generator@0.2.6_magicast@0.3.5_rollup@2.79.2_vite@6.0._ogydl56ulmbrdc7tnlth7p7nni/node_modules/@vite-pwa/nuxt/dist/runtime/composables/index')['useTransparentPwaIcon']>
     readonly useUserStore: UnwrapRef<typeof import('../../stores/user')['useUserStore']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>

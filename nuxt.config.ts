@@ -1,21 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
-  typescript: {
-    tsConfig: {
-      exclude: ['../service-worker'],
-    },
-  },
+  // typescript: {
+  //   tsConfig: {
+  //     exclude: ['../service-worker'],
+  //   },
+  // },
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
-  nitro: {
-    prerender: {
-      routes: ['/'],
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: ['/'],
+  //   },
+  // },
 
-  modules: ['@vite-pwa/nuxt','@nuxtjs/i18n','@pinia/nuxt','@element-plus/nuxt'],
+  modules: ['@nuxtjs/i18n','@pinia/nuxt','@element-plus/nuxt'],
   i18n: {
     vueI18n: './i18n.config.ts' // if you are using custom path, default 
   },
