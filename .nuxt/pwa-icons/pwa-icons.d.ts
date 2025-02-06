@@ -11,10 +11,10 @@ export type PWAAssetIcon<T extends HtmlLink> = Omit<IconAsset<T>, 'buffer'> & {
   asImage: PWAAssetIconImage
 }
 export interface PWAIcons {
-  transparent: Record<'pwa-64x64.png' | 'pwa-192x192.png' | 'pwa-512x512.png', PWAAssetIcon<HtmlLink>>
-  maskable: Record<'maskable-icon-512x512.png', PWAAssetIcon<HtmlLink>>
-  favicon: Record<'favicon.ico' | 'favicon.svg', PWAAssetIcon<FaviconLink>>
-  apple: Record<'apple-touch-icon-180x180.png', PWAAssetIcon<HtmlLink>>
+  transparent: Record<string, PWAAssetIcon<HtmlLink>>
+  maskable: Record<string, PWAAssetIcon<HtmlLink>>
+  favicon: Record<string, PWAAssetIcon<FaviconLink>>
+  apple: Record<string, PWAAssetIcon<HtmlLink>>
   appleSplashScreen: Record<string, PWAAssetIcon<AppleSplashScreenLink>>
 }
 

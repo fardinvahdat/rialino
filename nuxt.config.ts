@@ -21,41 +21,41 @@ export default defineNuxtConfig({
   },
 
   pwa: {
-    strategies: 'injectManifest',
-    srcDir: 'service-worker',
-    filename: 'sw.ts',
-    registerType: 'prompt',
-    injectRegister: false,
+    // strategies: 'injectManifest',
+    // srcDir: 'service-worker',
+    // filename: 'sw.ts',
+    // registerType: 'prompt',
+    // injectRegister: false,
 
-    pwaAssets: {
-      disabled: false,
-      config: true,
-    },
+    // pwaAssets: {
+    //   disabled: false,
+    //   config: true,
+    // },
 
-    manifest: {
-      name: 'rialino',
-      short_name: 'rialino',
-      description: 'rialino',
-      theme_color: '#ffffff',
-    },
+    // manifest: {
+    //   name: 'rialino',
+    //   short_name: 'rialino',
+    //   description: 'rialino',
+    //   theme_color: '#ffffff',
+    // },
 
-    injectManifest: {
-      globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
-    },
+    // injectManifest: {
+    //   globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
+    // },
 
-    devOptions: {
-      enabled: false,
-      suppressWarnings: true,
-      navigateFallback: '/',
-      navigateFallbackAllowlist: [/^\/$/],
-      type: 'module',
-    },
+    // devOptions: {
+    //   enabled: false,
+    //   suppressWarnings: true,
+    //   navigateFallback: '/',
+    //   navigateFallbackAllowlist: [/^\/$/],
+    //   type: 'module',
+    // },
 
-    registerWebManifestInRouteRules: true,
+    // registerWebManifestInRouteRules: true,
 
-    client: {
-      installPrompt: true,
-    },
+    // client: {
+    //   installPrompt: true,
+    // },
   },
   runtimeConfig: {
       public: {
