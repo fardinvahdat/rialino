@@ -38,7 +38,7 @@ const store = useUserStore()
 const { user } = storeToRefs(store)
     const config = useRuntimeConfig()
         try {
-            const data = await fetch(`${config.public.baseURL}users/me`, {
+            const data = await fetch(`/external/users/me`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 }

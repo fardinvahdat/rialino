@@ -21,6 +21,19 @@ export default defineNuxtConfig({
       },
   },
 
+  proxy: {
+    debug: false,
+    experimental: {
+      listener: false    
+    },
+    proxies: {        
+            '/external': {
+                target: process.env.BASE_URL,            
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/external/, '')        
+            },
+        }
+    },
   compatibilityDate: '2025-01-05',
 
   postcss: {

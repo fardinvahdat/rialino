@@ -12,6 +12,9 @@ importers:
 
   .:
     dependencies:
+      '@nuxt-alt/proxy':
+        specifier: ^2.5.8
+        version: 2.5.8(magicast@0.3.5)(rollup@2.79.2)
       '@pinia/nuxt':
         specifier: ^0.9.0
         version: 0.9.0(magicast@0.3.5)(pinia@2.3.1(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3)))(rollup@2.79.2)
@@ -1153,6 +1156,9 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
+  '@nuxt-alt/proxy@2.5.8':
+    resolution: {integrity: sha512-5Rrh31rMKSi7Atr/bbYTuKJnmMQJ/UlQhQCiI4GIPZwO+oNnKvpH1s2XRWaMfLwKGn3LI7dBdBrhrBklCxcCKg==}
+
   '@nuxt/cli@3.20.0':
     resolution: {integrity: sha512-TmQPjIHXJFPTssPMMFuLF48nr9cm6ctaNwrnhDFl4xLunfLR4rrMJNJAQhepWyukg970ZgokZVbUYMqf6eCnTQ==}
     engines: {node: ^16.10.0 || >=18.0.0}
@@ -1308,6 +1314,13 @@ packages:
   '@redocly/openapi-core@1.27.2':
     resolution: {integrity: sha512-qVrDc27DHpeO2NRCMeRdb4299nijKQE3BY0wrA+WUHlOLScorIi/y7JzammLk22IaTvjR9Mv9aTAdjE1aUwJnA==}
     engines: {node: '>=14.19.0', npm: '>=7.0.0'}
+
+  '@refactorjs/http-proxy@0.2.14':
+    resolution: {integrity: sha512-JI35e5QjEWns3KPRw5j6cCiPN60GtOLR2bgr4hPr0kIgQaxVCVIEsWnalC0Avvy02a5a8NSmpjFbpoDESD1PxQ==}
+    engines: {node: '>=16.0.0'}
+
+  '@refactorjs/serialize@1.0.7':
+    resolution: {integrity: sha512-6fdXkxp06pZ/E8YjxxCBm0gF234VadKvma2ut1vNkG991IDOnCr0DjIlxKmB44yg0hSMYfiG9s6rMOKg03WDSg==}
 
   '@rollup/plugin-alias@5.1.1':
     resolution: {integrity: sha512-PR9zDb+rOzkRb2VD+EuKB7UC41vU5DIwZ5qqCpk0KJudcWAyi8rvYOhS7+L5aZCspw1stTViLgN5v6FF1p5cgQ==}
@@ -3979,6 +3992,9 @@ packages:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
 
+  requires-port@1.0.0:
+    resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
+
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -6100,6 +6116,18 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.18.0
 
+  '@nuxt-alt/proxy@2.5.8(magicast@0.3.5)(rollup@2.79.2)':
+    dependencies:
+      '@nuxt/kit': 3.15.2(magicast@0.3.5)(rollup@2.79.2)
+      '@refactorjs/http-proxy': 0.2.14
+      '@refactorjs/serialize': 1.0.7
+      defu: 6.1.4
+      picocolors: 1.1.1
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+
   '@nuxt/cli@3.20.0(magicast@0.3.5)':
     dependencies:
       c12: 2.0.1(magicast@0.3.5)
@@ -6453,6 +6481,12 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@refactorjs/http-proxy@0.2.14':
+    dependencies:
+      requires-port: 1.0.0
+
+  '@refactorjs/serialize@1.0.7': {}
 
   '@rollup/plugin-alias@5.1.1(rollup@4.31.0)':
     optionalDependencies:
@@ -9509,6 +9543,8 @@ snapshots:
   require-directory@2.1.1: {}
 
   require-from-string@2.0.2: {}
+
+  requires-port@1.0.0: {}
 
   resolve-from@4.0.0: {}
 
