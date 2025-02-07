@@ -80,7 +80,7 @@ const handleUpdateProfile = async () => {
         // Call the server API route
         const response = await $fetch('/api/update-profile', {
             method: 'POST',
-            body: { ...state.value, token: token.value },
+            body: { ...state.value },
         });
 
         // Handle the response
