@@ -38,12 +38,13 @@ const store = useUserStore()
 const { user } = storeToRefs(store)
     const config = useRuntimeConfig()
         try {
-            const data = await $fetch(`${config.public.baseURL}users/me`, {
+            const data = await fetch(`${config.public.baseURL}users/me`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 }
             });
-            user.value=data.data
+            const response=await data.json()
+            user.value=response.data
         } catch (error) {
             console.log(error);
             return error

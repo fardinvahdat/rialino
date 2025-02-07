@@ -29,7 +29,7 @@
                     <div class="flex items-center gap-1 lg:text-primary-b1 text-gray-b2">
                         <div class="lg:flex flex-col justify-start hidden">
                             <a :href="`phone:${t('support_number')}`" class="text-gray-b2 font-semibold text-base">{{
-                                t('support_number') }}</a>
+                        t('support_number') }}</a>
                             <span class="text-gray-b2 font-normal text-sm block text-left">{{ t('support') }}</span>
                         </div>
                     </div>
@@ -123,15 +123,14 @@ const handleExit = () => {
         type: 'warning',
     })
         .then(() => {
+            token.value = ""
+            user.value = null
             drawer.value = false
+            isLoading.value = false
             ElMessage({
                 type: 'success',
                 message: 'با موفقیت خارج شدید',
             })
-            setTimeout(() => {
-                token.value = ""
-                user.value = null
-            }, 1000);
         })
         .catch(() => {
             // catch error

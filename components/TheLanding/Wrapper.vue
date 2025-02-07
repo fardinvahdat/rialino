@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TheLandingHero v-if="siteName" :name="siteName" :list="searachList" :loading="searchLoading"
+        <TheLandingHero :name="siteName" :list="searachList" :loading="searchLoading"
             @search="handleSearch" />
         <TheLandingWhyRialino />
         <TheLandingFeatures />
@@ -29,7 +29,7 @@ const handleSearch = (e) => {
 onMounted(async () => {
     const config = useRuntimeConfig()
     try {
-        const data = await $fetch(`${config.public.baseURL}home`);
+        const data = await $fetch(`/api/home`);
         searachList.value = data.data.search.sites
         siteName.value = searachList.value[0].name
     } catch (error) {

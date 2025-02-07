@@ -9,7 +9,11 @@
                     <Icon :name="selectedOption?.icon || ''" class="md:h-[70px] h-[50px]" />
                     <p class="md:text-lg text-sm">{{ t('auto_order') }} {{ selectedOption?.name }}</p>
                 </div>
-                <div class="relative bg-gray-l4 w-full min-h-10 rounded-md flex items-center gap-2 p-2">
+                <form class="relative bg-gray-l4 w-full min-h-10 rounded-md flex items-center gap-2 p-2"
+                    @submit.prevent="emits('search', {
+            site_name: name,
+            url
+        })">
                     <select
                         class="w-[100px] bg-primary-l1 rounded-md p-1 outline-none text-primary-b1 md:text-base text-sm"
                         v-model="name">
@@ -18,14 +22,11 @@
                     <input v-model="url"
                         class="w-full border-none bg-transparent outline-none h-full md:text-base text-sm"
                         :placeholder="t('order_placeholder')" />
-                    <button class="absolute left-2" @click="emits('search', {
-            site_name: name,
-            url
-        })" :disabled="props.loading">
+                    <button class="absolute left-2" type="submit" :disabled="props.loading">
                         <Icon name="search" v-if="!props.loading" />
                         <BaseLoading class="py-2" v-else />
                     </button>
-                </div>
+                </form>
             </div>
             <p class="lg:text-base text-sm text-gray-b3 mt-4 leading-7">{{ selectedOption?.description }}</p>
         </div>
@@ -56,4 +57,7 @@ const selectedOption = computed(() => {
     return props.list?.filter((opt) => opt.name == name.value)[0]
 })
 
+watch(() => props.name, (newVal) => {
+    name.value = newVal
+})
 </script>

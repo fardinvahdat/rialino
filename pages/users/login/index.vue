@@ -9,7 +9,7 @@
                     <label class="text-sm text-gray-b4">لطفا شماره موبایل خود را وارد کنید</label>
                     <input v-model="number" type="text" placeholder="مثلا: ۰۹۱۲۱۲۳۴۵۶۷"
                         @change="errorMessageNumber && isInputValid"
-                        class="w-full py-[10px] px-3 mt-1 text-left placeholder:text-right rounded-md border-[1px] outline-none focus:border-black text-base" />
+                        class="w-full py-[10px] px-3 mt-1 placeholder:text-right rounded-md border-[1px] outline-none focus:border-black text-base" />
                     <p class="text-xs text-red-600" v-if="errorMessageNumber">{{ errorMessageNumber }}</p>
                 </div>
                 <BaseButton :disabled="isLoading">
@@ -47,6 +47,18 @@ const isInputValid = computed(() => {
 
 const handleLogin = async () => {
     if (!isInputValid.value) return
+    const userData = sessionStorage.getItem('user');
+    if (JSON.parse(userData) && JSON.parse(userData)?.number == number.value) {
+        let remainTime = (JSON.parse(userData).expired_at - new Date()) / 1000
+        if (remainTime > 1) {
+            ElNotification({
+                title: 'ناموفق',
+                message: `کد تایید قبلا برای شما ارسال شده است, مدت زمان باقیمانده تا ارسال مجدد کد ${Math.round(remainTime)} ثانیه است`,
+                type: 'error',
+            })
+            return
+        }
+    }
     isLoading.value = true
 
     //fetch api

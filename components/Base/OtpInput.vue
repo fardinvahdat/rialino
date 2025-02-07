@@ -1,7 +1,7 @@
 <template>
     <div class="otp-input max-w-full justify-between">
         <input v-for="(digit, index) in length" :key="index" :ref="(el) => (inputs[index] = el)" v-model="otp[index]"
-            type="number" maxlength="1" :class="['otp-input__field', { 'has-error': hasError }]"
+            type="tel" maxlength="1" :class="['otp-input__field', { 'has-error': hasError }]"
             @input="handleInput(index, $event)" @keydown.delete="handleDelete(index, $event)" @paste="handlePaste" />
     </div>
 </template>
